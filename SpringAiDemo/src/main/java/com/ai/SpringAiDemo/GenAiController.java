@@ -13,8 +13,13 @@ public class GenAiController {
         this.chatService = chatService;
     }
 
-    @GetMapping("ask-ai")
-    public String getResponse(@RequestParam String prompt){
-        return chatService.getResponse(prompt);
+//    @GetMapping("ask-ai")
+//    public String getResponse(@RequestParam String prompt){
+//        return chatService.getResponse(prompt);
+//    }
+
+    @GetMapping("ask-ai-options")
+    public String getResponseOptions(@RequestParam String prompt){
+        return chatService.getResponseOptions(prompt);
     }
 }
