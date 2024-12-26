@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 public class GenAiController {
@@ -23,10 +22,10 @@ public class GenAiController {
         this.recipeService = recipeService;
     }
 
-//    @GetMapping("ask-ai")
-//    public String getResponse(@RequestParam String prompt){
-//        return chatService.getResponse(prompt);
-//    }
+    @GetMapping("ask-ai")
+    public String getResponse(@RequestParam String prompt){
+        return chatService.getResponse(prompt);
+    }
 
     @GetMapping("ask-ai-options")
     public String getResponseOptions(@RequestParam String prompt){

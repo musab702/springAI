@@ -13,9 +13,9 @@ public class ChatService {
     public ChatService(ChatModel chatModel) {
         this.chatModel = chatModel;
     }
-//    public String getResponse(String prompt){
-//        return chatModel.call(prompt);
-//    }
+    public String getResponse(String prompt){
+        return chatModel.call(prompt);
+    }
 
     public String getResponseOptions(String prompt){
         ChatResponse response = chatModel.call(
