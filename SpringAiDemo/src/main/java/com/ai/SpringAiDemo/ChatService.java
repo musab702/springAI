@@ -25,7 +25,7 @@ public class ChatService {
                                 .withModel("gpt-3.5-turbo")
                                 .withTemperature(0.4)
                                 .build()
-                ));
+                )); //this is a test comment
         return response.getResult().getOutput().getContent();
     }
 }
